@@ -7,7 +7,7 @@ import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class CalculatorTest {
+class UnitTests {
 
     // Instantiate the classes
     Calculator calc = new Calculator();
@@ -17,6 +17,8 @@ class CalculatorTest {
     ArrayList<String> stringList = new ArrayList<>(Arrays.asList("Banana", "Apple", "Cherry"));
     ArrayList<Integer> intList = new ArrayList<>(Arrays.asList(3, 1, 2));
     ArrayList<Double> doubleList = new ArrayList<>(Arrays.asList(3.1, 1.2, 2.3));
+    ArrayList<String> nullList = null;
+    ArrayList<String> emptyList = new ArrayList<>();
 
     // Test the methods
     @Test
@@ -38,5 +40,7 @@ class CalculatorTest {
         assertEquals("[Apple, Banana, Cherry]", sort.Algorithm(stringList).toString());
         assertEquals("[1, 2, 3]", sort.Algorithm(intList).toString());
         assertEquals("[1.2, 2.3, 3.1]", sort.Algorithm(doubleList).toString());
+        assertEquals(null, sort.Algorithm(nullList));
+        assertEquals("[]", sort.Algorithm(emptyList).toString());
     }
 }
