@@ -13,12 +13,6 @@ class CalculatorTest {
     }
 
     @Test
-    void Wrong_Addition_Test() {
-        var calc = new Calculator();
-        assertEquals(10, calc.WrongAddition(5, 5));
-    }
-
-    @Test
     void GetGradeFromPercentage_Test() {
         var calc = new Calculator();
         assertEquals(1, calc.GetGradeFromPercentage(90));

@@ -6,10 +6,6 @@ public class Calculator {
         return A + B;
     }
 
-    public int WrongAddition(int A, int B) {
-        return A + B + 1;
-    }
-
     public int GetGradeFromPercentage(int Grade) {
         if (Grade >= 90) {
             return 1;
