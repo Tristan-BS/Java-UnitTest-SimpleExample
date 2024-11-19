@@ -1,5 +1,11 @@
 # Unit Testing in Java
 
+## Create Unit Test Class
+* Right-click in the file where your functions are located and click on “Generate” and then on “Test...”
+* Now a popup window opens in which you can select your desired library (in this case: JUnit5). Enter a suitable class name and press ok.
+* A new class has now been created and you can declare test functions using @Test and write the test functions.
+
+
 ## Run all Tests
 ![RunAllTests](documentation/images/RunAllTests.png)
 
